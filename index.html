@@ -4,10 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="dark">
+    <header class="header">
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="icon theme" class="toogle-theme_icon" />
+        <p id="toogle-text" class="toggle-theme_text">Dark Mode</p>
+      </div>
+      <div id="toggle-colors" class="colors">
+        <div data-color="hsl(214, 84%, 56%)" class="colors_item colors_item--blue"></div>
+        <div data-color="hsl(150, 84%, 56%)" class="colors_item colors_item--green"></div>
+        <div data-color="hsl(276, 84%, 56%)" class="colors_item colors_item--purple"></div>
+        <div data-color="hsl(46, 84%, 56%)" class="colors_item colors_item--orange"></div>
+      </div>
+    </header>
+    
+    <main class="main">
+      <section class="column column--left">
+        <!-- PROFILE CARD -->
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="assets/images/profile.jpg" alt="">
+          </div>
+          <div class="card__header">
+            <h2 class="card__title">JdevCedres</h2>
+            <p class="card__subtitle">Mobile Developer</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:jdevcedres@gmail.com">
+                jdevcedres@gmail.com
+              </a>
+            </div>
+            <div class="card__link">
+              <i class="fas fa-phone-alt icon"></i>
+              <a href="tel:699666999">
+                +34-699666999
+              </a>
+            </div>
+            <p class="card__text">
+              Apasionado de las nuevas tecnologías y en especial del ecosistema de mobile, android e IOS,
+              Mi proposito es poder trabajar y aprender en estos campos. 
+            </p>
+          </div>
+            
+        </article>
+      </section>
+      <section class="column column--right">
+        <article class="card">
+          <h2 class="card__title">MOBILE</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">KOTLIN</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">SWIFT</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JAVA</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <h2 class="card__title">MOBILE</h2>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">KOTLIN</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">SWIFT</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JAVA</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
     <script src="js/scripts.js"></script>
   </body>
+
 </html>
